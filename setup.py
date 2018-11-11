@@ -6,7 +6,7 @@ try:
 except ImportError:
     from distutils.core import setup
 
-version = "0.1.0"
+version = "0.1.1"
 description = (
     "Supports encoding conversion between `unicode` and `ibm935`",
 )
