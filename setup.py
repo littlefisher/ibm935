@@ -6,12 +6,20 @@ try:
 except ImportError:
     from distutils.core import setup
 
-version = "0.1.2"
+import sys
+
+version = "0.1.4"
 description = (
-    "Supports encoding conversion between `unicode` and `ibm935`",
+    "Supports encoding conversion between `unicode` and `ibm935` in Python"
 )
 
-long_description = open("README.md", "rb").read().decode("utf-8")
+if sys.version_info > (3, ):
+    kw = { "encoding": "utf-8" }
+else:
+    kw = {}
+
+with open("README.md", **kw) as f:
+    long_description = f.read()
 
 classifiers = [
     "Development Status :: 3 - Alpha",
