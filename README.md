@@ -1,3 +1,5 @@
+![version](https://img.shields.io/pypi/v/ibm935.svg) ![license](https://img.shields.io/pypi/l/ibm935.svg)
+
 # IBM935
 The codec `ibm935` is not yet officially supported. This package is designed for conversion between `unicode` and `ibm935`.
 
@@ -13,10 +15,9 @@ $ python setup.py install
 ```
 
 ## Usage
-Before using this codec, import the module and call `ibm935.register()`: 
+Before using this codec, import the module: 
 ```python
 import ibm935
-ibm935.register()
 ```
 
 Then we can convert `unicode` strings into `ibm935` codec as usual:
